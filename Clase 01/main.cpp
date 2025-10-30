@@ -1,9 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include <iostream>
 using namespace sf;
+using namespace std;
 
 int main() {
-    RenderWindow window(VideoMode(800, 600), "Leccion 02 - Bucle y eventos");
-
+    RenderWindow window(VideoMode(1920, 1080), "Leccion 02 - Bucle y eventos");
+	
+	Color fondo = Color::Black;
     // Bucle principal del programa (game loop)
     while (window.isOpen()) {
 
@@ -13,10 +16,17 @@ int main() {
             if (e.type == Event::Closed) {
                 window.close(); // Cierra la ventana al presionar la "X"
             }
-
+			if (e.type == Event::KeyPressed && e.key.code == Keyboard::Up){
+                cout<<"arriba"<<endl;
+            }
+            if (e.type == Event::KeyPressed && e.key.code == Keyboard::Down){
+                cout<<"abajo"<<endl;
+            }
+            if (e.type == Event::KeyPressed && e.key.code == Keyboard::Enter){
+                fondo=Color::Blue;
+            }
             // Ejemplo: cerrar con la tecla Escape
-            if (e.type == Event::KeyPressed && e.key.code == Keyboard::Escape
-			) {
+            if (e.type == Event::KeyPressed && e.key.code == Keyboard::X){
                 window.close();
             }
         }
@@ -24,7 +34,7 @@ int main() {
         // 2️⃣ Lógica del programa (movimientos, actualizaciones, etc.)
 
         // 3️⃣ Dibujar o limpiar pantalla
-        window.clear(Color::Black);
+        window.clear(fondo);
         window.display();
     }
 
