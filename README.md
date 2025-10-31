@@ -5,61 +5,65 @@ SFML es una biblioteca de desarrollo de software multiplataforma diseñada para 
 ## Distribucion de clases:
 
 1. Introducción y configuración del entorno
-- Objetivo: tener DevC++ configurado con SFML 2.5.1 y compilar el primer "hola ventana".
-- Entregables: proyecto base, instrucciones de linking y estructura de carpetas.
-- Ejercicio: compilar una ventana vacía.
+- Objetivo: Tener DevC++ configurado con SFML 2.5.1 y compilar el primer "hola ventana".
+- Entregables: Proyecto base, instrucciones de linking y estructura de carpetas.
+- Ejercicio: Compilar una ventana vacía.
 
 2. Bucle principal, eventos y cierre de ventana
-- Objetivo: entender el loop principal, pollEvent, eventos de teclado y ratón.
-- Ejercicio: cerrar con ESC, cambiar fondo con tecla.
+- Objetivo: Entender el loop principal, pollEvent, eventos de teclado y ratón.
+- Ejercicio: Cerrar con ESC, cambiar fondo con tecla.
 
-3. Texturas, Sprites y carga de imágenes
-- Objetivo: usar sf::Texture, sf::Sprite, gestionar recursos y prevenir pérdidas de memoria.
-- Ejercicio: mostrar una imagen y moverla con las teclas.
+3. Dibujar formas básicas en SFML
+- Objetivo: Dibujar figuras geométricas básicas
+- Ejercicio: Crear una escena donde aparezcan al menos 3 figuras distintas
 
-4. Texto y fuentes (sf::Text, sf::Font)
-- Objetivo: mostrar diálogos, HUD, y manejar fuentes (TTF).
-- Ejercicio: crear un pequeño HUD con nombre, vida y un texto de diálogo.
+4. Texturas, Sprites y carga de imágenes
+- Objetivo: Usar sf::Texture, sf::Sprite, gestionar recursos y prevenir pérdidas de memoria.
+- Ejercicio: Mostrar una imagen y moverla con las teclas.
 
-5. Animaciones por sprite sheet
-- Objetivo: animar personajes con sprite sheets y temporización.
-- Ejercicio: animación caminando (idle/walk) con cambio de frame según tiempo.
+5. Texto y fuentes (sf::Text, sf::Font)
+- Objetivo: Mostrar diálogos, HUD, y manejar fuentes (TTF).
+- Ejercicio: Crear un pequeño HUD con nombre, vida y un texto de diálogo.
 
-6. Input avanzado y control de jugador
-- Objetivo: input continuo vs eventos, control de física simple (velocidad), detección de colisiones básicas.
-- Ejercicio: mover personaje con velocidad variable y colisionar con rectángulos.
+6. Animaciones por sprite sheet
+- Objetivo: Animar personajes con sprite sheets y temporización.
+- Ejercicio: Animación caminando (idle/walk) con cambio de frame según tiempo.
 
-7. Cámaras y vistas (sf::View)
-- Objetivo: centrar la cámara en el jugador, zonas fijas, límites.
-- Ejercicio: crear mapa más grande que la pantalla y hacer que la cámara siga al jugador.
+7. Input avanzado y control de jugador
+- Objetivo: Input continuo vs eventos, control de física simple (velocidad), detección de colisiones básicas.
+- Ejercicio: Mover personaje con velocidad variable y colisionar con rectángulos.
 
-8. Tilemaps y mapas por capas (TMX básico)
-- Objetivo: mostrar tilemaps (o crear uno simple en código), optimizar dibujo por vista.
-- Ejercicio: crear un pequeño mapa 20x15 con colisiones en capas.
+8. Cámaras y vistas (sf::View)
+- Objetivo: Centrar la cámara en el jugador, zonas fijas, límites.
+- Ejercicio: Crear mapa más grande que la pantalla y hacer que la cámara siga al jugador.
 
-9. Sistema de diálogo (novela visual)
-- Objetivo: diseño de una clase DialogManager que muestre líneas, avanza con tecla, con portrait y opción de elección.
-- Ejercicio: implementar diálogo con 3 opciones que cambian una variable de estado.
+9. Tilemaps y mapas por capas (TMX básico)
+- Objetivo: Mostrar tilemaps (o crear uno simple en código), optimizar dibujo por vista.
+- Ejercicio: Crear un pequeño mapa 20x15 con colisiones en capas.
 
-10. Audio (sf::Music y sf::Sound)
-- Objetivo: música de fondo, efectos cortos, volumen y estados (pause/resume).
-- Ejercicio: reproducir música, botón para silenciar SFX/Music.
+10. Sistema de diálogo (novela visual)
+- Objetivo: Diseño de una clase DialogManager que muestre líneas, avanza con tecla, con portrait y opción de elección.
+- Ejercicio: Implementar diálogo con 3 opciones que cambian una variable de estado.
 
-11. Arquitectura orientada a objetos para un RPG
-- Objetivo: diseñar clases: Entity, Player : Entity, NPC : Entity, Item, Inventory, Scene/State.
-- Ejercicio: esqueleto de clases con interacciones básicas.
+11. Audio (sf::Music y sf::Sound)
+- Objetivo: Música de fondo, efectos cortos, volumen y estados (pause/resume).
+- Ejercicio: Reproducir música, botón para silenciar SFX/Music.
 
-12. Sistema de escenas/estados (menu, juego, inventario, diálogo)
-- Objetivo: implementar StateManager para cambiar entre pantallas y ahorrar lógica.
-- Ejercicio: menú principal -> juego -> pausa -> inventario.
+12. Arquitectura orientada a objetos para un RPG
+- Objetivo: Diseñar clases: Entity, Player : Entity, NPC : Entity, Item, Inventory, Scene/State.
+- Ejercicio: Esqueleto de clases con interacciones básicas.
 
-13. Guardar/cargar (serialización simple)
-- Objetivo: persistir progreso (JSON sencillo o CSV), guardar posición, inventario y estado de misiones.
-- Ejercicio: guardar y cargar estado del jugador.
+13. Sistema de escenas/estados (menu, juego, inventario, diálogo)
+- Objetivo: Implementar StateManager para cambiar entre pantallas y ahorrar lógica.
+- Ejercicio: Menú principal -> juego -> pausa -> inventario.
 
-14. Pulido final, despliegue y GitHub
-- Objetivo: paquete final, estructura de repo, .gitignore recomendado, cómo subir releases y documentación (README).
-- Ejercicio: subir el proyecto inicial a GitHub con README y preview (GIF o imágenes).
+14. Guardar/cargar (serialización simple)
+- Objetivo: Persistir progreso (JSON sencillo o CSV), guardar posición, inventario y estado de misiones.
+- Ejercicio: Guardar y cargar estado del jugador.
+
+15. Pulido final, despliegue y GitHub
+- Objetivo: Paquete final, estructura de repo, .gitignore recomendado, cómo subir releases y documentación (README).
+- Ejercicio: Subir el proyecto inicial a GitHub con README y preview (GIF o imágenes).
 
 ## Dev.
 
