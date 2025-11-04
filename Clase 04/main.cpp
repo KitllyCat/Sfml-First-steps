@@ -11,8 +11,7 @@ int main() {
     if (!textura.loadFromFile("personaje.png")) {
         return -1;
     }
-
-
+    
     Sprite sprite;
     sprite.setTexture(textura);
 
@@ -33,15 +32,33 @@ int main() {
 					}
 				}
 			}
-            
-            if (e.type == Event::KeyPressed) {
-                if (e.key.code == Keyboard::Left)
-                    sprite.rotate(-5.f);
-                else if (e.key.code == Keyboard::Right)
-                    sprite.rotate(5.f);
-            }
-        }
-
+            if(e.type ==Event::KeyPressed){
+            	FloatRect bounds = sprite.getGlobalBounds();
+				Vector2f pos = sprite.getPosition();
+            	switch (e.key.code) {
+			        case Keyboard::Up: {
+			            if (bounds.top - 10 >= 0)
+			                sprite.move(0, -10);
+			            break;
+			        }
+			        case Keyboard::Down: {
+			            if (bounds.top + bounds.height + 10 <= window.getSize().y)
+			                sprite.move(0, +10);
+			            break;
+			        }
+			        case Keyboard::Left: {
+			            if (bounds.left - 10 >= 0)
+			                sprite.move(-10, 0);
+			            break;
+			        }
+			        case Keyboard::Right: {
+			            if (bounds.left + bounds.width + 10 <= window.getSize().x)
+			                sprite.move(+10, 0);
+			            break;
+			        }
+			    }
+			}	
+    	}
         window.clear(Color::Black);
         window.draw(sprite);
         window.display();
