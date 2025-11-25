@@ -1,8 +1,8 @@
-# Leccion 04: Texturas, Sprites y carga de imágenes
+# Leccion 05: Texto y fuentes (sf::Text, sf::Font)
 
-- Objetivo: Usar sf::Texture, sf::Sprite, gestionar recursos y prevenir pérdidas de memoria.
-- Ejercicio: Mostrar una imagen y moverla con las teclas.
+- Objetivo: Mostrar diálogos, HUD, y manejar fuentes (TTF).
+- Ejercicio: Crear un pequeño HUD con nombre, vida y un texto de diálogo.
 
 ## Comentarios:
 
-En esta ocasion se dio un gran paso para poder comprender el funcionamiendo de las imagenes y como entran en juego en sfml junto a c++. Aunque el ejercicio fue algo sencillo, de igual manera fue de importancia para poder entender como funciona el sistema de carga y poder ubicar las cosas en un determinado espacio, ademas de que con el escado que nos ofrece, podemos editar mejor el pixelart que se usara mas adelante en el juego.
+Fue un poco complicado en esta ocasion, puesto que ya iba introducciendome en un tema un poco mas complejo, ya que el muestreo de los caracteres, aveces suele ser complicado, igual, siempre hay algo que aprender, y gracias a ello, pude ver como funciona de mejor manera su implementacion en sfml, para su posterior uso.
